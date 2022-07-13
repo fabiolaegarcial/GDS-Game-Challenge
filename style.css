@@ -1,0 +1,101 @@
+html, body{
+    font-family: Optima, Andale Mono, Arial, sans-serif;
+    min-height: 100vh;
+    background-color: rgb(227, 225, 221);
+}
+/* start button */
+.startScreen{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-right: 36%;
+    padding-left: 36%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    background-color: rgb(232, 147, 238);
+}
+.startButton {
+    display: flex;
+    padding: 40px;
+    padding-right: 60px;
+    padding-left: 60px;
+    font-size: 48px;
+    border: solid 5px black;
+    background-color: rgb(121, 246, 83);
+    font-family: Andale Mono;
+    font-weight: 800;
+    cursor: pointer;
+}
+.startButtonBottom {
+    text-align: center;    
+}
+
+/* game screen */
+.gamePlay{
+    display: none;
+    min-height: 100vh;
+}
+
+.computerChoice{
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    text-align: center;
+}
+.computerChoice{
+    width: 12em;
+    padding: 1em;
+}
+.rockIconC{
+    display: none;
+}
+.paperIconC{
+    display: none;
+}
+.scissorsIconC{
+    display: none;
+}
+
+
+.playerChoice{
+    position: absolute;
+    bottom: 2em;
+    margin: 0;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    text-align: center;
+}
+.playerChoice img{
+    width: 12em;
+    padding: 1em;
+    cursor: pointer;
+}
+
+
+
+
+/* Score board */
+.score{
+    margin: 20px;
+    padding: 1em;
+    background-color: rgb(232, 147, 238);
+    width: 6em;
+    line-height: 8px;
+    font-weight: 400;
+    border: dotted 3px black;
+    border-radius: 13px;
+}
+.scoreSB{
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 8px;
+    font-weight: 600;
+}
+.scoreboardSub{
+    padding-left: 8px;
+    line-height: 10px;
+}

@@ -5,9 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="startScreen"> 
+        <!-- screen with start button to begin game -->
+        <button class="startButton">START</button>
+        <p class="startButtonBottom">Press START to start the game.</p>
+    </div>
+
+
+    <div class="gamePlay">
+        <div class="computerChoice">
+            <!-- randomly generated computer selection -->
+            <h2 class="computerWaitingResponse">Computer has chosen...</h2>
+            <img class="rockIconC" src="rock.png">
+            <img class="paperIconC" src="paper.png">
+            <img class="scissorsIconC" src="scissors.png">
+        </div>
+
+        <div class="playerChoice">
+            <!-- display three choices - PNGs - and allow user to select one by clicking icon --> 
+            <img class="playerOption" id="1" src="rock.png" >
+            <img class="playerOption" id="2" src="paper.png">
+            <img class="playerOption" id="3" src="scissors.png">
+            <h2 class="playerQuestion">Rock, Paper, or Scissors?</h2>
+
+
+        </div>
+
+        <div class="score">
+            <!-- score board in corner of screen -->
+            <p class="scoreSB">SCORE</p>
+            <p class="scoreboardSub">COMP - <strong class="computerScore">0</strong> </p>
+            <p class="scoreboardSub">YOU - <strong class="playerScore">0</strong> </p>
+        </div>
+
+        <div class="resultScreen">
+            <!-- display result once three rounds are over - best out of three -->
+        </div>
+    </div>
+
+
+
     <script src="app.js"></script>
 </body>
 </html>
