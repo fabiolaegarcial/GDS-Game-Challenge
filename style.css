@@ -39,7 +39,7 @@ html, body{
     font-family: Andale Mono;
     font-weight: 800;
     cursor: pointer;
-    transform: translate(15%, -0%);
+    transform: translate(18%, -0%);
 }
 .startButtonBottom {
     text-align: center;    
