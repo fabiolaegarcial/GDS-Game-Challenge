@@ -16,7 +16,7 @@ html, body{
     padding-top: 12%;
     padding-bottom: 12%;
     background-color: rgb(232, 147, 238);
-    border: solid black 5px;
+    border: solid 5px black;
     border-radius: 20px;
 }
 .startHead{
