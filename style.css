@@ -11,14 +11,25 @@ html, body{
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    padding-right: 36%;
-    padding-left: 36%;
-    padding-top: 15%;
-    padding-bottom: 15%;
+    padding-right: 30%;
+    padding-left: 30%;
+    padding-top: 12%;
+    padding-bottom: 12%;
     background-color: rgb(232, 147, 238);
+    border: solid black 5px;
+    border-radius: 20px;
+}
+.startHead{
+    text-align: center;
+}
+.gameTitle{
+    white-space: nowrap;
+    font-size: 40px;
+}
+.gameInstructions{
+    font-weight: 200;
 }
 .startButton {
-    display: flex;
     padding: 40px;
     padding-right: 60px;
     padding-left: 60px;
@@ -28,6 +39,7 @@ html, body{
     font-family: Andale Mono;
     font-weight: 800;
     cursor: pointer;
+    transform: translate(15%, -0%);
 }
 .startButtonBottom {
     text-align: center;    
@@ -45,10 +57,10 @@ html, body{
     left: 50%;
     transform: translate(-50%, -10%);
     text-align: center;
-}
-.computerChoice{
-    width: 12em;
     padding: 1em;
+}
+.computerWaitingResponse{
+    white-space: nowrap;
 }
 .rockIconC{
     display: none;
@@ -60,7 +72,6 @@ html, body{
     display: none;
 }
 
-
 .playerChoice{
     position: absolute;
     bottom: 2em;
@@ -70,12 +81,42 @@ html, body{
     text-align: center;
 }
 .playerChoice img{
-    width: 12em;
     padding: 1em;
     cursor: pointer;
 }
+.playerQuestion{
+    font-weight: 300;
+    font-size: 20px;
+}
 
-
+.currentRoundWinner{
+    display: none;
+    position: absolute;
+    margin-top: 10em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+.gameWinner{
+    display: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-right: 30%;
+    padding-left: 30%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    border: solid black 5px;
+    border-radius: 20px;
+    background-color: rgb(232, 147, 238);
+    white-space: nowrap;
+    font-size: 45px;
+}
 
 
 /* Score board */

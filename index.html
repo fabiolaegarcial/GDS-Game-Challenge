@@ -9,6 +9,8 @@
 </head>
 <body>
     <div class="startScreen"> 
+        <h1 class="startHead gameTitle">Rock, Paper, Scissors.</h1>
+        <h5 class="startHead gameInstructions"> Welcome to Rock, Paper, Scissors! This game is best of three (rounds). Ties do not count as a round.</h5>
         <!-- screen with start button to begin game -->
         <button class="startButton">START</button>
         <p class="startButtonBottom">Press START to start the game.</p>
@@ -18,7 +20,7 @@
     <div class="gamePlay">
         <div class="computerChoice">
             <!-- randomly generated computer selection -->
-            <h2 class="computerWaitingResponse">Computer has chosen...</h2>
+            <h3 class="computerWaitingResponse">COMP has chosen...</h3>
             <img class="rockIconC" src="rock.png">
             <img class="paperIconC" src="paper.png">
             <img class="scissorsIconC" src="scissors.png">
@@ -29,9 +31,7 @@
             <img class="playerOption" id="1" src="rock.png" >
             <img class="playerOption" id="2" src="paper.png">
             <img class="playerOption" id="3" src="scissors.png">
-            <h2 class="playerQuestion">Rock, Paper, or Scissors?</h2>
-
-
+            <h2 class="playerQuestion">Make your selection by clicking an icon.</h2>
         </div>
 
         <div class="score">
@@ -39,6 +39,11 @@
             <p class="scoreSB">SCORE</p>
             <p class="scoreboardSub">COMP - <strong class="computerScore">0</strong> </p>
             <p class="scoreboardSub">YOU - <strong class="playerScore">0</strong> </p>
+        </div>
+
+        <div>
+            <p class="currentRoundWinner">ROUND WINNER</p>
+            <h1 class="gameWinner"></h1>
         </div>
 
         <div class="resultScreen">
